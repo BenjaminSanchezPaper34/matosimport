@@ -67,7 +67,7 @@ const CATEGORIES = [
 
 export default function Categories() {
   return (
-    <section className="relative py-24 lg:py-32">
+    <section className="relative py-24 lg:py-32 bg-[#08080a]">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div data-reveal className="mb-16 max-w-2xl">
           <p className="text-sm font-semibold uppercase tracking-wider text-gold mb-3">

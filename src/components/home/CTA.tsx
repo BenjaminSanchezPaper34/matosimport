@@ -2,7 +2,7 @@
 
 export default function CTA() {
   return (
-    <section className="relative py-24 lg:py-32">
+    <section className="relative py-24 lg:py-32 bg-[#08080a]">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div data-reveal className="relative overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br from-accent/10 via-black to-gold/5 p-12 lg:p-20">
           <div className="absolute -top-20 -right-20 h-60 w-60 rounded-full bg-accent/20 blur-[100px]" />

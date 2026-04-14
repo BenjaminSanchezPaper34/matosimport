@@ -13,7 +13,7 @@ const BRANDS = [
 
 export default function Brands() {
   return (
-    <section className="relative py-24 lg:py-32 border-t border-white/5">
+    <section className="relative py-24 lg:py-32 bg-[#08080a]">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div data-reveal className="mb-16 text-center">
           <p className="text-sm font-semibold uppercase tracking-wider text-gold mb-3">
