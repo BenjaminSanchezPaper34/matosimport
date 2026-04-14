@@ -35,7 +35,7 @@ export default function Footer() {
               <img
                 src="/logos/logo-concession.svg"
                 alt="Matos Import by Jeff"
-                className="h-8 w-auto"
+                className="h-11 w-auto"
               />
             </div>
             <p className="text-sm leading-relaxed text-gray-400 mb-6">

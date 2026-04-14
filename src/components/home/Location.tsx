@@ -37,7 +37,7 @@ export default function Location() {
                 <img
                   src="/logos/logo-location.svg"
                   alt="Matos Import Location — Jet Rider"
-                  className="h-9 sm:h-10 w-auto drop-shadow-lg"
+                  className="h-11 sm:h-14 w-auto drop-shadow-lg"
                   loading="lazy"
                 />
               </div>

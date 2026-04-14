@@ -45,7 +45,7 @@ export default function Navbar() {
               <img
                 src="/logos/logo-concession.svg"
                 alt="Matos Import by Jeff"
-                className="h-7 sm:h-8 w-auto"
+                className="h-9 sm:h-11 w-auto"
               />
             </Link>
 
