@@ -157,17 +157,20 @@ export default function Footer() {
           <p className="text-xs text-gray-600">
             &copy; {new Date().getFullYear()} Matos Import by Jeff. Tous droits réservés.
           </p>
-          <p className="text-xs text-gray-600">
-            Site par{" "}
-            <a
-              href="https://www.instagram.com/benjaminsanchez_paper34/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-400 transition-colors hover:text-white"
-            >
-              Paper34
-            </a>
-          </p>
+          <a
+            href="https://paper34.vercel.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 text-gray-600 transition-all hover:text-white hover:opacity-100 opacity-60 group"
+          >
+            <span className="text-[10px] uppercase tracking-wider">Site par</span>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/logos/paper34.svg"
+              alt="PAPER34"
+              className="h-4 w-auto transition-opacity group-hover:opacity-100"
+            />
+          </a>
         </div>
       </div>
     </footer>
