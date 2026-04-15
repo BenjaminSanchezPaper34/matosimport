@@ -7,8 +7,7 @@ import Categories from "@/components/home/Categories";
 import Trust from "@/components/home/Trust";
 import Brands from "@/components/home/Brands";
 import Testimonials from "@/components/home/Testimonials";
-import ConcessionPreview from "@/components/home/ConcessionPreview";
-import Location from "@/components/home/Location";
+import DualActivity from "@/components/home/DualActivity";
 import BlogPreview from "@/components/home/BlogPreview";
 import CTA from "@/components/home/CTA";
 
@@ -23,9 +22,8 @@ export default function Home() {
       <Trust />
       <Brands />
       <Testimonials />
-      <ConcessionPreview />
+      <DualActivity />
       <BlogPreview />
-      <Location />
       <CTA />
     </>
   );
