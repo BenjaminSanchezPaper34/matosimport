@@ -154,4 +154,157 @@ Depuis 1991, on est installés sur l'Île des Loisirs. Que vous ayez votre propr
 
 **Adresse :** 4 Parking du Temps Libre, 34300 Agde`,
   },
+  {
+    slug: "hivernage-jet-ski-proteger-machine",
+    title: "Hivernage jet-ski : comment protéger votre machine pendant l'hiver",
+    excerpt: "L'hivernage est l'étape la plus importante pour la longévité de votre jet-ski. Voici la procédure complète pour éviter les mauvaises surprises au printemps.",
+    category: "Entretien",
+    date: "2025-11-05",
+    readTime: "7 min",
+    image: "/images/concession/showroom.jpg",
+    content: `## Pourquoi l'hivernage est crucial
+
+Un jet-ski qui passe l'hiver sans préparation, c'est une facture garantie au printemps : corrosion, gel dans le circuit de refroidissement, batterie morte, essence dégradée. 30 minutes de préparation vous évitent des centaines d'euros de réparation.
+
+## La procédure complète en 8 étapes
+
+### 1. Rinçage à l'eau douce
+Immédiatement après la dernière sortie. Faites tourner le moteur 2-3 minutes avec l'adaptateur de rinçage. L'eau salée est l'ennemi n°1.
+
+### 2. Vidange moteur
+Changez l'huile et le filtre tant que le moteur est chaud. L'huile usagée contient des acides qui attaquent les pièces internes pendant l'hiver.
+
+### 3. Stabilisation du carburant
+Ajoutez un stabilisateur dans le réservoir plein (pas vide — un réservoir vide = condensation = rouille). Faites tourner le moteur 5 minutes pour que le produit circule.
+
+### 4. Lubrification du circuit d'échappement
+Vaporisez de l'huile de stockage dans les cylindres via les puits de bougies. Tournez le moteur à la main quelques tours.
+
+### 5. Batterie
+Débranchez-la et stockez-la dans un endroit sec et tempéré. Idéalement sur un maintien de charge automatique.
+
+### 6. Protection extérieure
+Cirez la coque, lubrifiez les charnières et les loquets. Traitez les parties métalliques avec un spray anti-corrosion.
+
+### 7. Remorque
+Graissez les roulements, vérifiez les pneus (pression + état), protégez les feux de la corrosion.
+
+### 8. Housse et stockage
+Housse respirante obligatoire (pas de bâche plastique = condensation). Stockez dans un endroit abrité, idéalement couvert.
+
+## Le gardiennage chez Matos Import
+
+On propose un service de gardiennage complet au Cap d'Agde : stockage couvert, hivernage professionnel, et remise en route au printemps. Votre jet est prêt quand vous l'êtes.
+
+**Tarif gardiennage :** nous consulter au 04 67 26 57 70`,
+  },
+  {
+    slug: "seadoo-2026-nouveautes-gamme",
+    title: "Sea-Doo 2026 : toutes les nouveautés de la gamme",
+    excerpt: "BRP dévoile sa gamme Sea-Doo 2026 avec des évolutions majeures. Nouveaux modèles, technologies embarquées et motorisations — on fait le point.",
+    category: "Actualité",
+    date: "2025-12-01",
+    readTime: "6 min",
+    image: "/images/jets/rxt-325.png",
+    content: `## La gamme Sea-Doo 2026 en bref
+
+BRP continue d'innover avec sa gamme 2026. Voici les principales nouveautés annoncées pour cette saison.
+
+## Les modèles phares
+
+### Sea-Doo RXT-X 325
+Le vaisseau amiral reste le RXT-X avec son moteur Rotax 1630 ACE superchargé de 325 chevaux. Pour 2026, le système de suspension a été revu pour plus de confort à haute vitesse.
+
+- Moteur : Rotax 1630 ACE, 325 ch
+- Technologie : écran tactile 7.8", GPS intégré
+- Coque : S³ Hull pour une stabilité maximale
+
+### Sea-Doo GTX Limited 300
+Le touring ultime, pensé pour les longues balades. Sono Bluetooth intégrée, siège premium, coffre XXL. Le modèle Limited ajoute le système LinQ pour fixer des accessoires.
+
+- Moteur : Rotax 1630 ACE, 300 ch
+- Confort : suspension réglable, sono BRP Audio
+- Capacité : 3 personnes, 135L de rangement
+
+### Sea-Doo Spark Trixx
+L'entrée de gamme fun ne change pas de philosophie : léger (186 kg), agile, parfait pour débuter ou s'amuser. Le mode Trixx permet de faire des figures (wheelies, spins).
+
+- Moteur : Rotax 900 ACE, 90 ch
+- Poids : 186 kg à sec
+- Spécial : mode Trixx, marche arrière intelligente
+
+## Quelle motorisation choisir ?
+
+| Modèle | Chevaux | Usage | Prix neuf indicatif |
+|--------|---------|-------|-------------------|
+| Spark | 60-90 ch | Loisir/débutant | 7 000 — 10 000 € |
+| GTI/GTR | 130-230 ch | Polyvalent | 12 000 — 18 000 € |
+| GTX | 170-300 ch | Touring/famille | 18 000 — 28 000 € |
+| RXP-X/RXT-X | 300-325 ch | Performance | 22 000 — 30 000 € |
+
+## Venez les découvrir
+
+En tant que concessionnaire officiel Sea-Doo, Matos Import dispose de la gamme complète en showroom. Venez essayer et comparer les modèles.
+
+**Rendez-vous à la concession :** 4 Parking du Temps Libre, Cap d'Agde
+**Ou appelez-nous :** 04 67 26 57 70`,
+  },
+  {
+    slug: "permis-bateau-jet-ski-guide-pratique",
+    title: "Permis bateau pour jet-ski : tout ce qu'il faut savoir en 2026",
+    excerpt: "Quel permis pour conduire un jet-ski ? Combien ça coûte ? Où le passer au Cap d'Agde ? On répond à toutes vos questions.",
+    category: "Guide pratique",
+    date: "2026-04-01",
+    readTime: "5 min",
+    image: "/images/concession/batiment.jpg",
+    content: `## Quel permis pour un jet-ski ?
+
+En France, la réglementation est simple :
+
+- **Moins de 6 CV (moteur)** : aucun permis nécessaire
+- **Plus de 6 CV** : permis côtier obligatoire (ou permis hauturier)
+
+En pratique, tous les jet-skis modernes font plus de 6 CV. Le permis côtier est donc indispensable.
+
+## Le permis côtier en détail
+
+### Conditions
+- Avoir 16 ans minimum
+- Aucun diplôme préalable requis
+
+### Formation
+La formation comprend :
+- **Théorie** : 5 heures minimum (code maritime, balisage, sécurité, météo, règles de navigation)
+- **Pratique** : 3h30 minimum en mer (manœuvres, homme à la mer, navigation)
+
+### Examen
+- QCM de 40 questions (5 erreurs maximum)
+- Validation pratique par le formateur
+
+### Durée et coût
+- Formation : 2 à 5 jours selon le centre
+- Prix : 250 à 400 € selon les centres de formation
+- Le permis est valable à vie (pas de renouvellement)
+
+## Où passer le permis au Cap d'Agde ?
+
+Plusieurs écoles de navigation proposent le permis côtier au Cap d'Agde. La plupart font des stages intensifs sur 2 jours (week-end).
+
+## Et après le permis ?
+
+Une fois le permis en poche, venez chez Matos Import pour :
+- **Acheter** votre premier jet (neuf ou occasion)
+- **Louer** un jet-ski via Jet Rider pour vos premières sorties
+- **Vous équiper** : gilet, combinaison, cordage de sécurité
+
+## Règles à connaître
+
+1. **Bande des 300 mètres** : navigation à vitesse réduite (5 nœuds max) dans la bande côtière
+2. **Chenal balisé** : obligation de passer par les chenaux pour accéder au large
+3. **Distance de sécurité** : 100 m des baigneurs, 50 m des autres embarcations
+4. **Équipement obligatoire** : gilet, coupe-circuit, moyen de repérage (miroir/sifflet)
+5. **VHF** : recommandée pour la navigation au-delà de 2 milles
+
+**Questions ? Appelez-nous :** 04 67 26 57 70 — on vous oriente vers les bons centres de formation.`,
+  },
 ];
