@@ -103,12 +103,6 @@ export default function ConcessionnairePage() {
                   et la même exigence.
                 </p>
               </div>
-              <div className="mt-6 pt-6 border-t border-white/5">
-                <p className="text-xs text-gray-600 italic">
-                  &laquo;&nbsp;Le jet-ski, c&apos;est la liberté. Et la liberté, ça se partage.&nbsp;&raquo;
-                  <span className="text-gray-500 not-italic ml-2">— Jeff</span>
-                </p>
-              </div>
             </div>
           </div>
         </div>
