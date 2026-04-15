@@ -1,14 +1,14 @@
 "use client";
 
 const BRANDS = [
-  { name: "Sea-Doo", tagline: "Concessionnaire officiel", logo: "https://www.matosimport.com/img/m/136.jpg" },
-  { name: "Yamaha", tagline: "Pièces adaptables", logo: "https://www.matosimport.com/img/m/33.jpg" },
-  { name: "Kawasaki", tagline: "Pièces adaptables", logo: "https://www.matosimport.com/img/m/32.jpg" },
-  { name: "Riva Racing", tagline: "Performance", logo: "https://www.matosimport.com/img/m/3.jpg" },
-  { name: "Jobe", tagline: "Équipements", logo: "https://www.matosimport.com/img/m/24.jpg" },
-  { name: "SBT", tagline: "538 produits", logo: "https://www.matosimport.com/img/m/5.jpg" },
-  { name: "BRP", tagline: "Pièces d'origine", logo: "https://www.matosimport.com/img/m/55.jpg" },
-  { name: "WSM", tagline: "512 produits", logo: "https://www.matosimport.com/img/m/7.jpg" },
+  { name: "Sea-Doo", tagline: "Concessionnaire officiel", logo: "/logos/brands/seadoo.jpg" },
+  { name: "Yamaha", tagline: "Pièces adaptables", logo: "/logos/brands/yamaha.jpg" },
+  { name: "Kawasaki", tagline: "Pièces adaptables", logo: "/logos/brands/kawasaki.jpg" },
+  { name: "Riva Racing", tagline: "Performance", logo: "/logos/brands/riva-racing.jpg" },
+  { name: "Jobe", tagline: "Équipements", logo: "/logos/brands/jobe.jpg" },
+  { name: "SBT", tagline: "538 produits", logo: "/logos/brands/sbt.jpg" },
+  { name: "BRP", tagline: "Pièces d'origine", logo: "/logos/brands/brp.jpg" },
+  { name: "WSM", tagline: "512 produits", logo: "/logos/brands/wsm.jpg" },
 ];
 
 export default function Brands() {
