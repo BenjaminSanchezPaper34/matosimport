@@ -129,8 +129,8 @@ export default function Hero() {
 
                   <button
                     onClick={handleSearch}
-                    disabled={!brand}
-                    className={`flex items-center justify-center gap-2 rounded-xl px-6 py-3 text-sm font-semibold text-white transition-all active:scale-[0.98] ${brand ? "bg-accent hover:bg-accent-hover" : "bg-gray-700 cursor-not-allowed opacity-50"}`}
+                    disabled={!brand || !model}
+                    className={`flex items-center justify-center gap-2 rounded-xl px-6 py-3 text-sm font-semibold text-white transition-all active:scale-[0.98] ${brand && model ? "bg-accent hover:bg-accent-hover" : "bg-gray-700 cursor-not-allowed opacity-50"}`}
                   >
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                       <circle cx="11" cy="11" r="8" /><path d="m21 21-4.3-4.3" />
@@ -141,7 +141,7 @@ export default function Hero() {
                 </div>
               </div>
               <p className="mt-2 text-[10px] sm:text-xs text-gray-400/80">
-                {brand && model ? "Cliquez sur Rechercher pour voir les pièces compatibles sur la boutique" : "Choisissez une marque pour commencer"}
+                {brand && model ? "Cliquez sur Rechercher pour voir les pièces compatibles sur la boutique" : brand ? "Choisissez un modèle pour continuer" : "Choisissez une marque pour commencer"}
               </p>
             </div>
           )}
