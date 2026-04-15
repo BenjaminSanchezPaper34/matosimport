@@ -5,7 +5,8 @@ import Link from "next/link";
 
 const NAV_LINKS = [
   { label: "Concessionnaire", href: "/concessionnaire", external: false },
-  { label: "Boutique", href: "https://www.matosimport.com/fr/parts/jet-ski", external: true },
+  { label: "Pièces & Accessoires", href: "https://www.matosimport.com/fr/parts/jet-ski", external: true },
+  { label: "Occasions", href: "https://www.leboncoin.fr/recherche?text=matos+import+by+jeff&kst=k", external: true },
   { label: "Services", href: "/services", external: false },
   { label: "Blog", href: "/blog", external: false },
   { label: "Contact", href: "/contact", external: false },
