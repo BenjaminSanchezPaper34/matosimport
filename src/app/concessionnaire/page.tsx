@@ -60,6 +60,59 @@ export default function ConcessionnairePage() {
           </div>
         </div>
 
+        {/* Hommage Jeff */}
+        <div className="mb-20 relative rounded-3xl border border-white/5 bg-white/[0.01] overflow-hidden">
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-0">
+            {/* Photo */}
+            <div className="lg:col-span-2 relative min-h-[300px] lg:min-h-0">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/images/concession/jeff.jpg"
+                alt="Jeff — Fondateur de Matos Import"
+                className="absolute inset-0 w-full h-full object-cover"
+                loading="lazy"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent lg:bg-gradient-to-r lg:from-transparent lg:to-black/20" />
+            </div>
+
+            {/* Text */}
+            <div className="lg:col-span-3 p-8 sm:p-10 lg:p-14 flex flex-col justify-center">
+              <span className="text-gold text-xs font-medium uppercase tracking-wider mb-4 block">
+                L&apos;histoire derrière le nom
+              </span>
+              <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4 tracking-tight">
+                &laquo;&nbsp;by Jeff&nbsp;&raquo;
+              </h2>
+              <div className="space-y-4 text-sm text-gray-400 leading-relaxed">
+                <p>
+                  Jeff, c&apos;est l&apos;homme qui a tout commencé. En 1991, il fonde Matos Import
+                  au Cap d&apos;Agde avec une passion dévorante pour le jet-ski et une vision simple :
+                  offrir aux pilotes les meilleures pièces, le meilleur service, et un accueil humain.
+                </p>
+                <p>
+                  Pendant plus de trois décennies, Jeff a bâti bien plus qu&apos;une entreprise.
+                  Il a créé une référence européenne, un lieu où chaque passionné se sentait chez lui.
+                  Son expertise, sa générosité et son sourire ont marqué des milliers de clients
+                  devenus des amis.
+                </p>
+                <p className="text-gray-300 font-medium">
+                  Aujourd&apos;hui, Jeff nous a quittés — mais son esprit vit dans chaque pièce
+                  que nous vendons, chaque jet que nous réparons, chaque client que nous accueillons.
+                  Le &laquo;&nbsp;by Jeff&nbsp;&raquo; n&apos;est pas un simple nom.
+                  C&apos;est une promesse&nbsp;: perpétuer son héritage avec la même passion
+                  et la même exigence.
+                </p>
+              </div>
+              <div className="mt-6 pt-6 border-t border-white/5">
+                <p className="text-xs text-gray-600 italic">
+                  &laquo;&nbsp;Le jet-ski, c&apos;est la liberté. Et la liberté, ça se partage.&nbsp;&raquo;
+                  <span className="text-gray-500 not-italic ml-2">— Jeff</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Gamme Sea-Doo */}
         <div className="mb-20">
           <p className="text-sm font-semibold uppercase tracking-wider text-accent mb-3">Gamme Sea-Doo</p>
