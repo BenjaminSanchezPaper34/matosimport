@@ -16,6 +16,8 @@ export default function BlogPreview() {
             </p>
             <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
               Nos actualités
+              <br />
+              <span className="text-gray-400">&amp; conseils</span>
             </h2>
             <p className="mt-3 text-sm text-gray-500">
               Guides, conseils et actualités du monde du jet-ski

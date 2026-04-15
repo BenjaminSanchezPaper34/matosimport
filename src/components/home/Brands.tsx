@@ -1,12 +1,21 @@
 "use client";
 
-const BRAND_NAMES = ["Sea-Doo", "Yamaha", "Kawasaki", "Riva Racing", "Jobe", "SBT", "BRP", "WSM"];
+const BRANDS = [
+  { name: "Sea-Doo", logo: "/logos/brands/seadoo.svg" },
+  { name: "Yamaha", logo: "/logos/brands/yamaha.svg" },
+  { name: "Kawasaki", logo: "/logos/brands/kawasaki.svg" },
+  { name: "Riva Racing", logo: "/logos/brands/riva-racing.svg" },
+  { name: "Jobe", logo: "/logos/brands/jobe.svg" },
+  { name: "SBT", logo: "/logos/brands/sbt.svg" },
+  { name: "BRP", logo: "/logos/brands/brp.svg" },
+  { name: "WSM", logo: "/logos/brands/wsm.svg" },
+];
 
 const brandsJsonLd = {
   "@context": "https://schema.org",
   "@type": "AutoDealer",
   name: "Matos Import by Jeff",
-  brand: BRAND_NAMES.map((name) => ({ "@type": "Brand", name })),
+  brand: BRANDS.map((b) => ({ "@type": "Brand", name: b.name })),
 };
 
 export default function Brands() {
@@ -18,24 +27,30 @@ export default function Brands() {
       />
 
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div data-reveal className="mb-12 text-center">
+        <div data-reveal className="mb-14 text-center">
           <p className="text-sm font-semibold uppercase tracking-wider text-accent mb-3">
             Nos marques
           </p>
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
-            Les leaders du jet-ski
+            Les leaders
+            <br />
+            <span className="text-gray-400">du jet-ski</span>
           </h2>
         </div>
 
-        <div data-reveal className="flex justify-center">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/logos/brands/all-brands.svg"
-            alt="Marques distribuées : Sea-Doo, Yamaha, Kawasaki, Riva Racing, Jobe, SBT, BRP, WSM"
-            title="Nos marques partenaires"
-            className="w-full max-w-3xl h-auto opacity-40 hover:opacity-70 transition-opacity duration-500"
-            loading="lazy"
-          />
+        <div data-reveal className="flex flex-wrap items-center justify-center gap-x-10 gap-y-8 sm:gap-x-14 lg:gap-x-20">
+          {BRANDS.map((brand) => (
+            <div key={brand.name} className="group">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={brand.logo}
+                alt={brand.name}
+                title={brand.name}
+                className="h-6 sm:h-8 w-auto object-contain opacity-40 transition-opacity duration-300 group-hover:opacity-90"
+                loading="lazy"
+              />
+            </div>
+          ))}
         </div>
       </div>
     </section>

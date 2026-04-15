@@ -11,7 +11,9 @@ export default function ConcessionPreview() {
             Depuis 1991
           </p>
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
-            La concession &amp; nos services
+            La concession
+            <br />
+            <span className="text-gray-400">&amp; nos services</span>
           </h2>
         </div>
 

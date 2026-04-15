@@ -49,7 +49,9 @@ export default function Testimonials() {
               Avis clients
             </p>
             <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
-              Ce que disent nos clients
+              Ce que disent
+              <br />
+              <span className="text-gray-400">nos clients</span>
             </h2>
             <div className="mt-3 flex items-center gap-3">
               <div className="flex gap-0.5">
