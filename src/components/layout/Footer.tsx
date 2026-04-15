@@ -1,25 +1,35 @@
 import Link from "next/link";
 
+function FooterLink({ link }: { link: { label: string; href: string; external?: boolean } }) {
+  if (link.external) {
+    return (
+      <a href={link.href} target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 transition-colors hover:text-white inline-flex items-center gap-1">
+        {link.label}
+        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-30"><path d="M7 17L17 7" /><path d="M7 7h10v10" /></svg>
+      </a>
+    );
+  }
+  return <Link href={link.href} className="text-sm text-gray-400 transition-colors hover:text-white">{link.label}</Link>;
+}
+
 const FOOTER_LINKS = {
   concession: [
     { label: "Concessionnaire Sea-Doo", href: "/concessionnaire" },
-    { label: "Pièces détachées", href: "/pieces-detachees" },
-    { label: "Équipements & Accessoires", href: "/equipements" },
+    { label: "Boutique pièces", href: "https://www.matosimport.com/fr/parts/jet-ski", external: true },
+    { label: "Jets d'occasion", href: "https://www.leboncoin.fr/recherche?text=matos+import+by+jeff&kst=k", external: true },
     { label: "Atelier & Réparation", href: "/services" },
-    { label: "Gardiennage", href: "/services#gardiennage" },
+    { label: "Location jet-ski", href: "https://locationjet.matosimport.com", external: true },
   ],
   info: [
-    { label: "Conditions de livraison", href: "/livraison" },
-    { label: "Conditions Générales de Vente", href: "/cgv" },
-    { label: "Mentions légales", href: "/mentions-legales" },
-    { label: "Paiement sécurisé", href: "/paiement" },
-    { label: "Financement", href: "/financement" },
+    { label: "Services", href: "/services" },
+    { label: "Blog", href: "/blog" },
+    { label: "Mentions légales", href: "https://www.matosimport.com/fr/content/4-mentions-legales", external: true },
+    { label: "CGV", href: "https://www.matosimport.com/fr/content/3-conditions-generales-de-vente-cgv", external: true },
   ],
   contact: [
     { label: "Nous contacter", href: "/contact" },
-    { label: "Blog", href: "/blog" },
-    { label: "Mon compte", href: "/compte" },
-    { label: "Mes commandes", href: "/compte/commandes" },
+    { label: "Mon compte", href: "https://www.matosimport.com/fr/mon-compte", external: true },
+    { label: "Mes commandes", href: "https://www.matosimport.com/fr/historique-commandes", external: true },
   ],
 };
 
@@ -87,12 +97,7 @@ export default function Footer() {
             <ul className="space-y-2.5">
               {FOOTER_LINKS.concession.map((link) => (
                 <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-sm text-gray-400 transition-colors hover:text-white"
-                  >
-                    {link.label}
-                  </Link>
+                  <FooterLink link={link} />
                 </li>
               ))}
             </ul>
@@ -106,12 +111,7 @@ export default function Footer() {
             <ul className="space-y-2.5">
               {FOOTER_LINKS.info.map((link) => (
                 <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-sm text-gray-400 transition-colors hover:text-white"
-                  >
-                    {link.label}
-                  </Link>
+                  <FooterLink link={link} />
                 </li>
               ))}
             </ul>

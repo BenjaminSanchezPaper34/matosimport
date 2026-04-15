@@ -4,12 +4,11 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 
 const NAV_LINKS = [
-  { label: "Concessionnaire", href: "/concessionnaire" },
-  { label: "Pièces détachées", href: "/pieces-detachees" },
-  { label: "Équipements", href: "/equipements" },
-  { label: "Services", href: "/services" },
-  { label: "Blog", href: "/blog" },
-  { label: "Contact", href: "/contact" },
+  { label: "Concessionnaire", href: "/concessionnaire", external: false },
+  { label: "Boutique", href: "https://www.matosimport.com/fr/parts/jet-ski", external: true },
+  { label: "Services", href: "/services", external: false },
+  { label: "Blog", href: "/blog", external: false },
+  { label: "Contact", href: "/contact", external: false },
 ];
 
 export default function Navbar() {
@@ -51,15 +50,28 @@ export default function Navbar() {
 
             {/* Desktop nav */}
             <div className="hidden lg:flex items-center gap-8">
-              {NAV_LINKS.map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className="hover-underline text-sm font-medium text-gray-400 transition-colors hover:text-white"
-                >
-                  {link.label}
-                </Link>
-              ))}
+              {NAV_LINKS.map((link) =>
+                link.external ? (
+                  <a
+                    key={link.href}
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover-underline text-sm font-medium text-gray-400 transition-colors hover:text-white inline-flex items-center gap-1"
+                  >
+                    {link.label}
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-40"><path d="M7 17L17 7" /><path d="M7 7h10v10" /></svg>
+                  </a>
+                ) : (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    className="hover-underline text-sm font-medium text-gray-400 transition-colors hover:text-white"
+                  >
+                    {link.label}
+                  </Link>
+                )
+              )}
             </div>
 
             {/* Actions */}
@@ -120,7 +132,21 @@ export default function Navbar() {
         <div className={`relative h-full flex flex-col pt-16 pb-8 px-6 overflow-y-auto transition-transform duration-300 ${mobileOpen ? "translate-y-0" : "-translate-y-4"}`}>
           {/* Links */}
           <div className="flex-1 flex flex-col justify-center -mt-16">
-            {NAV_LINKS.map((link, i) => (
+            {NAV_LINKS.map((link, i) =>
+              link.external ? (
+              <a
+                key={link.href}
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setMobileOpen(false)}
+                className="py-3 text-2xl font-semibold text-white border-b border-white/5 transition-colors active:text-accent inline-flex items-center gap-2"
+                style={{ transitionDelay: mobileOpen ? `${i * 50}ms` : "0ms" }}
+              >
+                {link.label}
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-30"><path d="M7 17L17 7" /><path d="M7 7h10v10" /></svg>
+              </a>
+              ) : (
               <Link
                 key={link.href}
                 href={link.href}
@@ -130,7 +156,8 @@ export default function Navbar() {
               >
                 {link.label}
               </Link>
-            ))}
+              )
+            )}
           </div>
 
           {/* Bottom info */}
