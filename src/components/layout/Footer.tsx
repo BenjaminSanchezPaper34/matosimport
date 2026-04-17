@@ -158,12 +158,13 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} Matos Import by Jeff. Tous droits réservés.
           </p>
           <a
-            href="https://paper34.vercel.app"
+            href="https://paper34.fr"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noopener"
+            title="Studio graphique Paper34 à Agde"
             className="flex items-center gap-2 text-gray-600 transition-all hover:text-white hover:opacity-100 opacity-60 group"
           >
-            <span className="text-[10px] uppercase tracking-wider">Site par</span>
+            <span className="text-[10px] uppercase tracking-wider">Site créé par</span>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/logos/paper34.svg"
