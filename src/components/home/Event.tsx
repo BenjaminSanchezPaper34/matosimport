@@ -3,10 +3,20 @@
 export default function Event() {
   return (
     <section className="relative py-24 lg:py-32 overflow-hidden bg-black">
-      {/* Background decorative */}
+      {/* Photo de fond — Social Club Sea-Doo */}
       <div className="absolute inset-0">
-        <div className="absolute top-0 left-1/4 w-[500px] h-[500px] rounded-full bg-accent/10 blur-[120px]" />
-        <div className="absolute bottom-0 right-1/4 w-[400px] h-[400px] rounded-full bg-gold/10 blur-[120px]" />
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/images/event/seadoo-club.webp"
+          alt=""
+          className="h-full w-full object-cover opacity-35"
+          loading="lazy"
+        />
+        {/* Overlay sombre pour lisibilité */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/80 to-black" />
+        {/* Glows colorés par-dessus */}
+        <div className="absolute top-0 left-1/4 w-[500px] h-[500px] rounded-full bg-accent/15 blur-[120px]" />
+        <div className="absolute bottom-0 right-1/4 w-[400px] h-[400px] rounded-full bg-gold/15 blur-[120px]" />
       </div>
 
       <div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-8">
