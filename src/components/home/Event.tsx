@@ -9,11 +9,11 @@ export default function Event() {
         <img
           src="/images/event/seadoo-club.webp"
           alt=""
-          className="h-full w-full object-cover opacity-35"
+          className="h-full w-full object-cover opacity-70"
           loading="lazy"
         />
         {/* Overlay sombre pour lisibilité */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/80 to-black" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/55 to-black/85" />
         {/* Glows colorés par-dessus */}
         <div className="absolute top-0 left-1/4 w-[500px] h-[500px] rounded-full bg-accent/15 blur-[120px]" />
         <div className="absolute bottom-0 right-1/4 w-[400px] h-[400px] rounded-full bg-gold/15 blur-[120px]" />
