@@ -167,7 +167,7 @@ export default function Event() {
               </ul>
 
               <a
-                href="https://docs.google.com/forms/d/1QeviuXISSAfmahwAV9R5b8YFidWn8J62oULHrZO42VM/viewform"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdkRGLLfHOYKP8Go7lkUJu0ItjZgZfbVD6yDViQfRaSs3JT9w/viewform"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-8 inline-flex items-center justify-center gap-2 rounded-full bg-gold px-6 py-3 text-sm font-semibold text-black transition-all hover:bg-gold/90 active:scale-[0.98] w-full sm:w-auto"
