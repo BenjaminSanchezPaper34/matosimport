@@ -99,6 +99,16 @@ export default function Event() {
                   <span>Équipe Matos Import à votre écoute</span>
                 </li>
               </ul>
+
+              <a
+                href="https://docs.google.com/forms/d/1nJgrPLS2XqtfuqPFJkLSTMb1yibzgu-IEb4SeJNtgrc/viewform"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-8 inline-flex items-center justify-center gap-2 rounded-full bg-accent px-6 py-3 text-sm font-semibold text-white transition-all hover:bg-accent-hover active:scale-[0.98] w-full sm:w-auto"
+              >
+                Réserver un essai
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
+              </a>
             </div>
           </div>
 
@@ -155,36 +165,28 @@ export default function Event() {
                   <span>Location de jet possible sur place si besoin</span>
                 </li>
               </ul>
+
+              <a
+                href="https://docs.google.com/forms/d/1QeviuXISSAfmahwAV9R5b8YFidWn8J62oULHrZO42VM/viewform"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-8 inline-flex items-center justify-center gap-2 rounded-full bg-gold px-6 py-3 text-sm font-semibold text-black transition-all hover:bg-gold/90 active:scale-[0.98] w-full sm:w-auto"
+              >
+                S&apos;inscrire à la rando
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
+              </a>
             </div>
           </div>
         </div>
 
-        {/* Bottom CTA */}
-        <div data-reveal className="mt-12 flex flex-col items-center gap-4">
-          <p className="text-center text-sm text-gray-400 max-w-xl">
-            Venez avec votre jet et participez à la rando, ou louez une machine sur place.
-            Places limitées — confirmez votre présence.
+        {/* Bottom note */}
+        <div data-reveal className="mt-12 text-center">
+          <p className="text-sm text-gray-500">
+            Places limitées — inscription obligatoire via les formulaires ci-dessus.
+            <br className="hidden sm:block" />
+            Une question&nbsp;?
+            <a href="tel:0467265770" className="text-white hover:text-accent transition-colors ml-2">04 67 26 57 70</a>
           </p>
-          <div className="flex flex-col sm:flex-row gap-3">
-            <a
-              href="tel:0467265770"
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-accent px-8 py-4 text-sm font-semibold text-white transition-all hover:bg-accent-hover active:scale-[0.98]"
-            >
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-              </svg>
-              Je m&apos;inscris — 04 67 26 57 70
-            </a>
-            <a
-              href="https://www.instagram.com/matos.importbyjeff/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 rounded-full border border-white/15 bg-white/5 px-8 py-4 text-sm font-medium text-white transition-all hover:bg-white/10"
-            >
-              Plus d&apos;infos sur Instagram
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M7 17L17 7" /><path d="M7 7h10v10" /></svg>
-            </a>
-          </div>
         </div>
       </div>
     </section>
