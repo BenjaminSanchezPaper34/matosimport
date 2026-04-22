@@ -53,16 +53,16 @@ export default function Event() {
 
         {/* Grid 2 jours */}
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
-          {/* JOUR 1 */}
+          {/* JOUR 1 — miroir : contenu aligné à DROITE sur desktop */}
           <div
             data-reveal
-            className="group relative rounded-3xl overflow-hidden border border-accent/20 bg-gradient-to-br from-[#0d0d0f] to-[#1a0a0c] p-8 sm:p-10 transition-all duration-500 hover:border-accent/40"
+            className="group relative rounded-3xl overflow-hidden border border-accent/20 bg-gradient-to-bl from-[#0d0d0f] to-[#1a0a0c] p-8 sm:p-10 transition-all duration-500 hover:border-accent/40"
           >
-            <div className="absolute top-0 right-0 w-[200px] h-[200px] rounded-full bg-accent/10 blur-[80px] opacity-60 group-hover:opacity-100 transition-opacity" />
+            <div className="absolute top-0 left-0 w-[200px] h-[200px] rounded-full bg-accent/10 blur-[80px] opacity-60 group-hover:opacity-100 transition-opacity" />
 
-            <div className="relative z-10">
-              <div className="flex items-center gap-3 mb-6">
-                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-accent/15 text-accent">
+            <div className="relative z-10 flex flex-col lg:items-end lg:text-right">
+              <div className="flex items-center gap-3 mb-6 lg:flex-row-reverse">
+                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-accent/15 text-accent shrink-0">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M20 7h-3V4a1 1 0 0 0-1-1H8a1 1 0 0 0-1 1v3H4a1 1 0 0 0-1 1v3h18V8a1 1 0 0 0-1-1Z" />
                     <path d="M3 11v8a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-8" />
@@ -74,25 +74,25 @@ export default function Event() {
                 </div>
               </div>
 
-              <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-accent/15 border border-accent/30 px-4 py-2">
+              <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-accent/15 border border-accent/30 px-4 py-2 self-start lg:self-end">
                 <span className="text-2xl font-bold text-accent">-10%</span>
                 <span className="text-sm text-white">sur toute la concession (hors jets)</span>
               </div>
 
-              <ul className="space-y-3 text-gray-300">
-                <li className="flex items-start gap-3">
+              <ul className="space-y-3 text-gray-300 w-full">
+                <li className="flex items-start gap-3 lg:flex-row-reverse">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mt-1 shrink-0 text-accent">
                     <polyline points="20 6 9 17 4 12" />
                   </svg>
                   <span>Remise exceptionnelle sur pièces, équipements &amp; accessoires</span>
                 </li>
-                <li className="flex items-start gap-3">
+                <li className="flex items-start gap-3 lg:flex-row-reverse">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mt-1 shrink-0 text-accent">
                     <polyline points="20 6 9 17 4 12" />
                   </svg>
                   <span>Essais de machines Sea-Doo sur place</span>
                 </li>
-                <li className="flex items-start gap-3">
+                <li className="flex items-start gap-3 lg:flex-row-reverse">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mt-1 shrink-0 text-accent">
                     <polyline points="20 6 9 17 4 12" />
                   </svg>
@@ -112,16 +112,16 @@ export default function Event() {
             </div>
           </div>
 
-          {/* JOUR 2 */}
+          {/* JOUR 2 — miroir : contenu aligné à GAUCHE sur desktop */}
           <div
             data-reveal
             className="group relative rounded-3xl overflow-hidden border border-gold/20 bg-gradient-to-br from-[#0d0d0f] to-[#1a1508] p-8 sm:p-10 transition-all duration-500 hover:border-gold/40"
           >
             <div className="absolute top-0 right-0 w-[200px] h-[200px] rounded-full bg-gold/10 blur-[80px] opacity-60 group-hover:opacity-100 transition-opacity" />
 
-            <div className="relative z-10">
+            <div className="relative z-10 flex flex-col lg:items-start lg:text-left">
               <div className="flex items-center gap-3 mb-6">
-                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gold/15 text-gold">
+                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gold/15 text-gold shrink-0">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M2 20a2.4 2.4 0 0 0 2 1 2.4 2.4 0 0 0 2-1 2.4 2.4 0 0 1 2-1 2.4 2.4 0 0 1 2 1 2.4 2.4 0 0 0 2 1 2.4 2.4 0 0 0 2-1 2.4 2.4 0 0 1 2-1 2.4 2.4 0 0 1 2 1 2.4 2.4 0 0 0 2 1 2.4 2.4 0 0 0 2-1" />
                     <path d="M2 16a2.4 2.4 0 0 0 2 1 2.4 2.4 0 0 0 2-1 2.4 2.4 0 0 1 2-1 2.4 2.4 0 0 1 2 1 2.4 2.4 0 0 0 2 1 2.4 2.4 0 0 0 2-1 2.4 2.4 0 0 1 2-1 2.4 2.4 0 0 1 2 1 2.4 2.4 0 0 0 2 1 2.4 2.4 0 0 0 2-1" />
@@ -135,11 +135,11 @@ export default function Event() {
                 </div>
               </div>
 
-              <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-gold/15 border border-gold/30 px-4 py-2">
+              <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-gold/15 border border-gold/30 px-4 py-2 self-start">
                 <span className="text-sm font-semibold text-gold">Ouverture de saison</span>
               </div>
 
-              <ul className="space-y-3 text-gray-300">
+              <ul className="space-y-3 text-gray-300 w-full">
                 <li className="flex items-start gap-3">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mt-1 shrink-0 text-gold">
                     <polyline points="20 6 9 17 4 12" />
