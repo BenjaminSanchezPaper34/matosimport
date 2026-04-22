@@ -52,7 +52,7 @@ export default function EventPopup() {
       role="dialog"
       aria-modal="true"
       aria-label="Événement 10 ans Matos Import"
-      className="fixed inset-0 z-[100] flex items-center justify-center p-4 sm:p-6 bg-black/85 backdrop-blur-sm animate-fade-in"
+      className="fixed inset-0 z-[100] flex items-center justify-center p-4 sm:p-6 bg-black/60 backdrop-blur-md animate-fade-in"
       onClick={close}
     >
       <div
