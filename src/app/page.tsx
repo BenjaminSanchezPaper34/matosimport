@@ -8,6 +8,7 @@ import Occasions from "@/components/home/Occasions";
 import Categories from "@/components/home/Categories";
 import Trust from "@/components/home/Trust";
 import Brands from "@/components/home/Brands";
+import FeaturedProducts from "@/components/home/FeaturedProducts";
 import Testimonials from "@/components/home/Testimonials";
 import DualActivity from "@/components/home/DualActivity";
 import BlogPreview from "@/components/home/BlogPreview";
@@ -25,6 +26,7 @@ export default function Home() {
       <Categories />
       <Trust />
       <Brands />
+      <FeaturedProducts />
       <Testimonials />
       <DualActivity />
       <BlogPreview />
