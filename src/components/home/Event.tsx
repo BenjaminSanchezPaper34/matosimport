@@ -2,7 +2,7 @@
 
 export default function Event() {
   return (
-    <section className="relative py-24 lg:py-32 overflow-hidden bg-black">
+    <section id="evenement" className="relative py-24 lg:py-32 overflow-hidden bg-black scroll-mt-20">
       {/* Photo de fond — Social Club Sea-Doo */}
       <div className="absolute inset-0">
         {/* eslint-disable-next-line @next/next/no-img-element */}
