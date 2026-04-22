@@ -59,6 +59,8 @@ export default function Event() {
             className="group relative rounded-3xl overflow-hidden border border-accent/20 bg-gradient-to-bl from-[#0d0d0f] to-[#1a0a0c] p-8 sm:p-10 transition-all duration-500 hover:border-accent/40"
           >
             <div className="absolute top-0 left-0 w-[200px] h-[200px] rounded-full bg-accent/10 blur-[80px] opacity-60 group-hover:opacity-100 transition-opacity" />
+            {/* Ligne décorative verticale — côté intérieur (droit) */}
+            <div className="hidden lg:block absolute top-8 bottom-8 right-0 w-px bg-gradient-to-b from-transparent via-accent/40 to-transparent" />
 
             <div className="relative z-10 flex flex-col lg:items-end lg:text-right">
               <div className="flex items-center gap-3 mb-6 lg:flex-row-reverse">
@@ -104,7 +106,7 @@ export default function Event() {
                 href="https://docs.google.com/forms/d/e/1FAIpQLSfKzAWxpBKrrceQW14_3rfvSLVzDxrlOsp8RUdCXD_4irUQzQ/viewform"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-8 inline-flex items-center justify-center gap-2 rounded-full bg-accent px-6 py-3 text-sm font-semibold text-white transition-all hover:bg-accent-hover active:scale-[0.98] w-full sm:w-auto"
+                className="mt-8 inline-flex items-center justify-center gap-2 rounded-full bg-accent px-6 py-3 text-sm font-semibold text-white transition-all hover:bg-accent-hover active:scale-[0.98] w-full sm:w-auto sm:min-w-[240px]"
               >
                 Réserver un essai
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
@@ -118,6 +120,8 @@ export default function Event() {
             className="group relative rounded-3xl overflow-hidden border border-gold/20 bg-gradient-to-br from-[#0d0d0f] to-[#1a1508] p-8 sm:p-10 transition-all duration-500 hover:border-gold/40"
           >
             <div className="absolute top-0 right-0 w-[200px] h-[200px] rounded-full bg-gold/10 blur-[80px] opacity-60 group-hover:opacity-100 transition-opacity" />
+            {/* Ligne décorative verticale — côté intérieur (gauche) */}
+            <div className="hidden lg:block absolute top-8 bottom-8 left-0 w-px bg-gradient-to-b from-transparent via-gold/40 to-transparent" />
 
             <div className="relative z-10 flex flex-col lg:items-start lg:text-left">
               <div className="flex items-center gap-3 mb-6">
@@ -170,7 +174,7 @@ export default function Event() {
                 href="https://docs.google.com/forms/d/e/1FAIpQLSdkRGLLfHOYKP8Go7lkUJu0ItjZgZfbVD6yDViQfRaSs3JT9w/viewform"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-8 inline-flex items-center justify-center gap-2 rounded-full bg-gold px-6 py-3 text-sm font-semibold text-black transition-all hover:bg-gold/90 active:scale-[0.98] w-full sm:w-auto"
+                className="mt-8 inline-flex items-center justify-center gap-2 rounded-full bg-gold px-6 py-3 text-sm font-semibold text-black transition-all hover:bg-gold/90 active:scale-[0.98] w-full sm:w-auto sm:min-w-[240px]"
               >
                 S&apos;inscrire à la rando
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
