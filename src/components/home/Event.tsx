@@ -199,6 +199,17 @@ export default function Event() {
           </div>
         </div>
 
+        {/* 3e card — Bannière officielle partenariat Sea-Doo */}
+        <div data-reveal className="mt-6 group relative rounded-3xl overflow-hidden border border-white/10 shadow-2xl shadow-black/40 transition-all duration-500 hover:border-white/25">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/images/event/popup-10ans.webp"
+            alt="10 ans Matos Import × Social Club Sea-Doo — 15 et 16 mai 2026"
+            className="w-full h-auto block transition-transform duration-700 group-hover:scale-[1.02]"
+            loading="lazy"
+          />
+        </div>
+
         {/* Bottom note */}
         <div data-reveal className="mt-12 text-center">
           <p className="text-sm text-gray-300 drop-shadow-[0_2px_6px_rgba(0,0,0,0.9)]">
