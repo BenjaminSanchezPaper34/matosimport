@@ -31,13 +31,13 @@ export default function Event() {
 
         {/* Title */}
         <div data-reveal className="mb-16 text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-6xl leading-tight">
+          <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-6xl leading-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.8)]">
             10 ans de Matos Import
             <br />
             <span className="text-gold">×</span>{" "}
-            <span className="text-gray-400">Social Club Sea-Doo</span>
+            <span className="text-gray-200">Social Club Sea-Doo</span>
           </h2>
-          <p className="mt-6 text-lg text-gray-400">
+          <p className="mt-6 text-lg text-gray-200 drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]">
             Deux journées exceptionnelles au Cap d&apos;Agde
           </p>
         </div>
@@ -46,19 +46,19 @@ export default function Event() {
         <div data-reveal className="mb-12 flex items-center justify-center">
           <div className="flex items-center gap-8 sm:gap-16">
             <div className="text-center">
-              <div className="text-6xl sm:text-8xl font-bold text-white leading-none tabular-nums">15</div>
-              <div className="mt-2 text-xs uppercase tracking-[0.3em] text-gray-500">Jeudi</div>
+              <div className="text-6xl sm:text-8xl font-bold text-white leading-none tabular-nums drop-shadow-[0_4px_16px_rgba(0,0,0,0.9)]">15</div>
+              <div className="mt-2 text-xs uppercase tracking-[0.3em] text-gray-300 drop-shadow-[0_2px_6px_rgba(0,0,0,0.9)]">Jeudi</div>
             </div>
             <div className="h-20 w-px bg-gradient-to-b from-transparent via-accent to-transparent" />
             <div className="text-center">
-              <div className="text-6xl sm:text-8xl font-bold text-white leading-none tabular-nums">16</div>
-              <div className="mt-2 text-xs uppercase tracking-[0.3em] text-gray-500">Vendredi</div>
+              <div className="text-6xl sm:text-8xl font-bold text-white leading-none tabular-nums drop-shadow-[0_4px_16px_rgba(0,0,0,0.9)]">16</div>
+              <div className="mt-2 text-xs uppercase tracking-[0.3em] text-gray-300 drop-shadow-[0_2px_6px_rgba(0,0,0,0.9)]">Vendredi</div>
             </div>
           </div>
         </div>
 
         <div data-reveal className="mb-12 text-center">
-          <p className="text-2xl font-semibold text-accent uppercase tracking-wider">Mai 2026</p>
+          <p className="text-2xl font-semibold text-accent uppercase tracking-wider drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]">Mai 2026</p>
         </div>
 
         {/* Grid 2 jours */}
@@ -201,7 +201,7 @@ export default function Event() {
 
         {/* Bottom note */}
         <div data-reveal className="mt-12 text-center">
-          <p className="text-sm text-gray-500">
+          <p className="text-sm text-gray-300 drop-shadow-[0_2px_6px_rgba(0,0,0,0.9)]">
             Places limitées — inscription obligatoire via les formulaires ci-dessus.
             <br className="hidden sm:block" />
             Une question&nbsp;?
