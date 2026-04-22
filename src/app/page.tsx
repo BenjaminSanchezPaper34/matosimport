@@ -2,6 +2,7 @@
 
 import { useScrollReveal } from "@/lib/useScrollReveal";
 import Hero from "@/components/home/Hero";
+import Event from "@/components/home/Event";
 import Occasions from "@/components/home/Occasions";
 import Categories from "@/components/home/Categories";
 import Trust from "@/components/home/Trust";
@@ -17,6 +18,7 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <Event />
       <Occasions />
       <Categories />
       <Trust />
