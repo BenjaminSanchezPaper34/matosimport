@@ -77,8 +77,8 @@ export default function Event() {
               </div>
 
               <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-accent/15 border border-accent/30 px-4 py-2 self-start lg:self-end">
-                <span className="text-2xl font-bold text-accent">-10%</span>
-                <span className="text-sm text-white">sur toute la concession (hors jets)</span>
+                <span className="text-sm font-bold text-accent">-10%</span>
+                <span className="text-sm font-semibold text-white">sur toute la concession (hors jets)</span>
               </div>
 
               <ul className="space-y-3 text-gray-300 w-full">
@@ -112,10 +112,10 @@ export default function Event() {
                 href="https://docs.google.com/forms/d/e/1FAIpQLSfKzAWxpBKrrceQW14_3rfvSLVzDxrlOsp8RUdCXD_4irUQzQ/viewform"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-8 inline-flex items-center justify-center gap-2 rounded-full bg-accent px-6 py-3 text-sm font-semibold text-white transition-all hover:bg-accent-hover active:scale-[0.98] w-full sm:w-auto sm:min-w-[240px]"
+                className="mt-8 inline-flex items-center justify-center gap-2 rounded-full bg-accent px-8 py-4 text-base font-semibold text-white shadow-lg shadow-accent/30 transition-all hover:bg-accent-hover hover:shadow-accent/50 hover:scale-[1.02] active:scale-[0.98] w-full sm:w-auto sm:min-w-[260px]"
               >
                 Réserver un essai
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
               </a>
             </div>
           </div>
@@ -180,10 +180,10 @@ export default function Event() {
                 href="https://docs.google.com/forms/d/e/1FAIpQLSdkRGLLfHOYKP8Go7lkUJu0ItjZgZfbVD6yDViQfRaSs3JT9w/viewform"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-8 inline-flex items-center justify-center gap-2 rounded-full bg-gold px-6 py-3 text-sm font-semibold text-black transition-all hover:bg-gold/90 active:scale-[0.98] w-full sm:w-auto sm:min-w-[240px]"
+                className="mt-8 inline-flex items-center justify-center gap-2 rounded-full bg-gold px-8 py-4 text-base font-semibold text-black shadow-lg shadow-gold/30 transition-all hover:bg-gold/90 hover:shadow-gold/50 hover:scale-[1.02] active:scale-[0.98] w-full sm:w-auto sm:min-w-[260px]"
               >
                 S&apos;inscrire à la rando
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
               </a>
             </div>
           </div>
