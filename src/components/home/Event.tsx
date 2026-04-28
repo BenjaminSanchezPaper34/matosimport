@@ -199,8 +199,12 @@ export default function Event() {
           </div>
         </div>
 
-        {/* 3e card — Bannière officielle partenariat Sea-Doo */}
-        <div data-reveal className="mt-6 group relative rounded-3xl overflow-hidden border border-white/10 shadow-2xl shadow-black/40 transition-all duration-500 hover:border-white/25">
+        {/* 3e card — Bannière officielle partenariat Sea-Doo (lien vers l'article blog) */}
+        <a
+          href="/blog/10-ans-matos-import-social-club-seadoo-mai-2026"
+          data-reveal
+          className="mt-6 group relative block rounded-3xl overflow-hidden border border-white/10 shadow-2xl shadow-black/40 transition-all duration-500 hover:border-white/25 cursor-pointer"
+        >
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/images/event/popup-10ans.webp"
@@ -208,7 +212,14 @@ export default function Event() {
             className="w-full h-auto block transition-transform duration-700 group-hover:scale-[1.02]"
             loading="lazy"
           />
-        </div>
+          {/* Indicateur "Lire l'article" qui apparaît au hover */}
+          <div className="absolute bottom-4 right-4 sm:bottom-6 sm:right-6 inline-flex items-center gap-2 rounded-full bg-black/70 backdrop-blur-md border border-white/20 px-4 py-2 text-xs sm:text-sm font-medium text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            Lire l&apos;article
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="transition-transform group-hover:translate-x-0.5">
+              <path d="M5 12h14" /><path d="m12 5 7 7-7 7" />
+            </svg>
+          </div>
+        </a>
 
         {/* Bottom note */}
         <div data-reveal className="mt-12 text-center">
