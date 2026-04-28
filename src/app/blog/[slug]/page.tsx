@@ -49,13 +49,13 @@ export default function BlogArticle() {
           </div>
         </div>
 
-        {/* Hero image */}
-        <div className="relative rounded-2xl overflow-hidden mb-12 aspect-video">
+        {/* Hero image — hauteur proportionnelle à l'image, jamais recadrée */}
+        <div className="relative rounded-2xl overflow-hidden mb-12 bg-white/[0.02]">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={post.image}
             alt={post.title}
-            className="h-full w-full object-cover"
+            className="block w-full h-auto"
           />
         </div>
 
