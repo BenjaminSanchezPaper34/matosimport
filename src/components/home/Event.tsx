@@ -7,7 +7,7 @@ export default function Event() {
       <div className="absolute inset-0">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/images/event/seadoo-club.webp"
+          src="/images/event/social-club.webp"
           alt=""
           className="h-full w-full object-cover opacity-70"
           loading="lazy"

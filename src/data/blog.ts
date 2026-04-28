@@ -17,7 +17,7 @@ export const blogPosts: BlogPost[] = [
     category: "Événement",
     date: "2026-04-22",
     readTime: "4 min",
-    image: "/images/event/popup-10ans.webp",
+    image: "/images/event/social-club.webp",
     content: `## Une double célébration au cœur du Cap d'Agde
 
 Le **15 et 16 mai 2026**, la concession Matos Import by Jeff fête ses **10 ans d'existence** en accueillant le **Social Club Sea-Doo** sur l'Île des Loisirs, au Cap d'Agde. Deux jours d'événements officiels, en partenariat direct avec Sea-Doo, pour rassembler la communauté des passionnés autour de la marque et de l'ouverture de la saison 2026.
