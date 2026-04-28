@@ -11,6 +11,70 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "10-ans-matos-import-social-club-seadoo-mai-2026",
+    title: "10 ans de Matos Import × Social Club Sea-Doo : rendez-vous les 15 et 16 mai au Cap d'Agde",
+    excerpt: "Deux journées exceptionnelles pour célébrer les 10 ans de Matos Import en partenariat officiel avec Sea-Doo : portes ouvertes, essais de la gamme 2026, remises, ride collectif et apéritif dînatoire.",
+    category: "Événement",
+    date: "2026-04-22",
+    readTime: "4 min",
+    image: "/images/event/popup-10ans.webp",
+    content: `## Une double célébration au cœur du Cap d'Agde
+
+Le **15 et 16 mai 2026**, la concession Matos Import by Jeff fête ses **10 ans d'existence** en accueillant le **Social Club Sea-Doo** sur l'Île des Loisirs, au Cap d'Agde. Deux jours d'événements officiels, en partenariat direct avec Sea-Doo, pour rassembler la communauté des passionnés autour de la marque et de l'ouverture de la saison 2026.
+
+L'occasion idéale pour découvrir la nouvelle gamme, profiter d'offres exceptionnelles, partager un ride avec d'autres pilotes, et célébrer une décennie d'engagement au service du jet-ski sur le territoire.
+
+## Jour 1 — Jeudi 15 mai : Concession ouverte
+
+La concession ouvre grand ses portes pour une journée placée sous le signe de la rencontre et des bons plans.
+
+**Au programme :**
+- **-10% sur toute la concession** (hors jets) : pièces, équipements, accessoires
+- **Essais des machines Sea-Doo gamme 2026** sur place — l'occasion de tester en conditions réelles avant d'acheter
+- **L'équipe Matos Import à votre écoute** pour des conseils personnalisés
+- **Ambiance festive** pour célébrer les 10 ans : on ne fête pas un anniversaire pareil tous les jours
+
+**Inscription obligatoire pour les essais** via le formulaire dédié — places limitées par session pour garantir la qualité de l'accompagnement.
+
+## Jour 2 — Vendredi 16 mai : Rando d'ouverture de saison
+
+La traditionnelle rando d'ouverture de saison prend cette année une dimension particulière, sous la bannière du Social Club Sea-Doo.
+
+**Au programme :**
+- **Ride collectif** dans un cadre d'exception au large du Cap d'Agde
+- **Cadeaux pour tous les participants** offerts par Sea-Doo et Matos Import
+- **Apéritif dînatoire** au retour pour prolonger le moment
+- **Location de jet possible sur place** pour ceux qui n'ont pas leur machine
+
+L'événement est ouvert à tous les passionnés, quel que soit leur niveau ou leur modèle. L'objectif : passer un moment mémorable ensemble pour lancer officiellement la saison.
+
+**Inscription obligatoire** via un formulaire dédié distinct de celui du jeudi — les places sont limitées par mesure de sécurité et pour garantir la qualité de l'encadrement.
+
+## Pourquoi cet événement compte
+
+Pour Matos Import, ces 10 ans représentent bien plus qu'un anniversaire commercial. C'est une décennie passée à construire une concession différente : ancrée sur le territoire agathois, fidèle à l'esprit que **Jeff** lui a insufflé dès le départ — proximité, expertise technique, passion authentique du jet-ski.
+
+Pour Sea-Doo, le Social Club est un format événementiel récent qui rassemble la communauté de la marque autour de moments forts : essais, rides, échanges. Le choix du Cap d'Agde et de Matos Import comme étape n'est pas anodin : il salue à la fois le travail de la concession et l'attractivité du spot agathois pour la pratique du jet-ski.
+
+## Informations pratiques
+
+**Lieu :** Concession Matos Import by Jeff
+4 Parking du Temps Libre — Île des Loisirs
+34300 Agde
+
+**Téléphone :** 04 67 26 57 70
+
+**Email :** matosimportbyjeff.34@gmail.com
+
+**Inscriptions :** via les formulaires dédiés disponibles directement sur la page d'accueil — un formulaire pour les essais (jeudi), un autre pour la rando (vendredi). Les places sont **limitées**, ne tardez pas.
+
+## Une question avant de venir ?
+
+L'équipe est joignable au **04 67 26 57 70** pour toute question sur le déroulé, l'inscription ou les modalités pratiques. On vous attend nombreux pour fêter cette décennie comme il se doit — au bord de l'eau, entre passionnés.
+
+À très vite au Cap d'Agde.`,
+  },
+  {
     slug: "revision-jet-ski-guide-complet",
     title: "Révision jet-ski : le guide complet pour entretenir et fiabiliser votre machine",
     excerpt: "Quand faire sa révision, quels sont les points de contrôle essentiels, et combien ça coûte ? On vous dit tout pour prolonger la durée de vie de votre jet-ski.",
