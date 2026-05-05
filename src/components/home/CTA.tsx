@@ -1,5 +1,3 @@
-"use client";
-
 export default function CTA() {
   return (
     <section className="relative py-24 lg:py-32 bg-[#08080a]">

@@ -1,6 +1,3 @@
-"use client";
-
-import { useScrollReveal } from "@/lib/useScrollReveal";
 import Hero from "@/components/home/Hero";
 import Event from "@/components/home/Event";
 import EventPopup from "@/components/EventPopup";
@@ -13,12 +10,12 @@ import Testimonials from "@/components/home/Testimonials";
 import DualActivity from "@/components/home/DualActivity";
 import BlogPreview from "@/components/home/BlogPreview";
 import CTA from "@/components/home/CTA";
+import ScrollReveal from "@/components/ScrollReveal";
 
 export default function Home() {
-  useScrollReveal();
-
   return (
     <>
+      <ScrollReveal />
       <EventPopup />
       <Hero />
       <Event />

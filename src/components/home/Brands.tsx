@@ -1,5 +1,3 @@
-"use client";
-
 const BRANDS = [
   { name: "Sea-Doo", logo: "/logos/brands/seadoo.svg" },
   { name: "Yamaha", logo: "/logos/brands/yamaha.svg" },

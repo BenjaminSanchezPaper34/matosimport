@@ -68,8 +68,8 @@ export const FEATURED_PRODUCTS: FeaturedProduct[] = [
 
 // Construit l'URL de recherche sur la boutique PrestaShop à partir du nom + ref
 export function buildProductSearchUrl(product: FeaturedProduct): string {
-  const query = encodeURIComponent(`${product.name} ${product.ref}`.trim());
-  return `https://www.matosimport.com/fr/recherche?s=${query}`;
+  const params = new URLSearchParams({ s: `${product.name} ${product.ref}`.trim() });
+  return `https://www.matosimport.com/fr/recherche?${params.toString()}`;
 }
 
 export const CATEGORY_LABELS: Record<FeaturedProduct["category"], string> = {

@@ -1,4 +1,4 @@
-"use client";
+import Link from "next/link";
 
 export default function Event() {
   return (
@@ -200,7 +200,7 @@ export default function Event() {
         </div>
 
         {/* 3e card — Bannière officielle partenariat Sea-Doo (lien vers l'article blog) */}
-        <a
+        <Link
           href="/blog/10-ans-matos-import-social-club-seadoo-mai-2026"
           data-reveal
           className="mt-6 group relative block rounded-3xl overflow-hidden border border-white/10 shadow-2xl shadow-black/40 transition-all duration-500 hover:border-white/25 cursor-pointer"
@@ -219,7 +219,7 @@ export default function Event() {
               <path d="M5 12h14" /><path d="m12 5 7 7-7 7" />
             </svg>
           </div>
-        </a>
+        </Link>
 
         {/* Bottom note */}
         <div data-reveal className="mt-12 text-center">

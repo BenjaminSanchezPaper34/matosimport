@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import occasionsData from "@/data/occasions.json";
 
 // Featured jets with official Sea-Doo press images
@@ -71,11 +72,12 @@ export default function Occasions() {
 
               {/* Image */}
               <div className="relative h-32 sm:h-40 w-full flex items-center justify-center mb-4">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+                <Image
                   src={jet.image}
                   alt={`Sea-Doo ${jet.model}`}
-                  className="h-full w-auto object-contain drop-shadow-2xl transition-transform duration-500 group-hover:scale-105"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  className="object-contain drop-shadow-2xl transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
 
@@ -124,12 +126,12 @@ export default function Occasions() {
               className="group relative flex flex-col rounded-2xl border border-white/5 bg-white/[0.02] overflow-hidden transition-all duration-300 hover:border-white/10 hover:bg-white/[0.04] hover:-translate-y-1"
             >
               <div className="relative h-44 sm:h-48 bg-gray-900 overflow-hidden">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+                <Image
                   src={`/images/occasions/jet-${item.id}.jpg`}
                   alt={item.title}
-                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  loading="lazy"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
                 <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-black/60 to-transparent" />
                 <div className="absolute top-3 left-3">

@@ -36,6 +36,7 @@ function AnimatedCounter({ target, suffix = "", prefix = "" }: { target: number;
   const [count, setCount] = useState(0);
   const ref = useRef<HTMLDivElement>(null);
   const hasAnimated = useRef(false);
+  const rafId = useRef<number | null>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -51,17 +52,22 @@ function AnimatedCounter({ target, suffix = "", prefix = "" }: { target: number;
             // Ease out cubic
             const eased = 1 - Math.pow(1 - progress, 3);
             setCount(Math.floor(eased * target));
-            if (progress < 1) requestAnimationFrame(animate);
+            if (progress < 1) {
+              rafId.current = requestAnimationFrame(animate);
+            }
           };
 
-          requestAnimationFrame(animate);
+          rafId.current = requestAnimationFrame(animate);
         }
       },
       { threshold: 0.5 }
     );
 
     if (ref.current) observer.observe(ref.current);
-    return () => observer.disconnect();
+    return () => {
+      observer.disconnect();
+      if (rafId.current !== null) cancelAnimationFrame(rafId.current);
+    };
   }, [target]);
 
   const formatted = target >= 1000

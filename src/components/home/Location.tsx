@@ -1,5 +1,3 @@
-"use client";
-
 export default function Location() {
   return (
     <section className="relative py-24 lg:py-32 border-t border-white/5 overflow-hidden">

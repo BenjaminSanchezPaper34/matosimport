@@ -1,5 +1,3 @@
-"use client";
-
 import { FEATURED_PRODUCTS, CATEGORY_LABELS, BRAND_COLORS, buildProductSearchUrl } from "@/data/featured-products";
 
 // Icônes par catégorie

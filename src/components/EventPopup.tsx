@@ -5,6 +5,26 @@ import { useEffect, useState } from "react";
 const EVENT_END_DATE = "2026-05-17"; // Popup actif jusqu'à cette date (inclus jusqu'à 00:00)
 const STORAGE_KEY = "event-popup-10ans-dismissed";
 
+// Helpers localStorage protégés (mode privé / Safari ITP / quotas / SSR peuvent throw)
+const safeStorage = {
+  get(key: string): string | null {
+    try {
+      if (typeof window === "undefined") return null;
+      return window.localStorage.getItem(key);
+    } catch {
+      return null;
+    }
+  },
+  set(key: string, value: string) {
+    try {
+      if (typeof window === "undefined") return;
+      window.localStorage.setItem(key, value);
+    } catch {
+      // localStorage indisponible (mode privé, quota, etc.) — on ignore silencieusement
+    }
+  },
+};
+
 export default function EventPopup() {
   const [open, setOpen] = useState(false);
 
@@ -15,7 +35,7 @@ export default function EventPopup() {
     if (now > end) return;
 
     // Ne s'affiche plus si déjà fermé dans cette session/version
-    const dismissed = localStorage.getItem(STORAGE_KEY);
+    const dismissed = safeStorage.get(STORAGE_KEY);
     if (dismissed === EVENT_END_DATE) return;
 
     // Léger délai pour ne pas bloquer le rendu initial
@@ -25,9 +45,7 @@ export default function EventPopup() {
 
   const close = () => {
     setOpen(false);
-    try {
-      localStorage.setItem(STORAGE_KEY, EVENT_END_DATE);
-    } catch {}
+    safeStorage.set(STORAGE_KEY, EVENT_END_DATE);
   };
 
   // Fermeture au clavier (Escape) + verrou du scroll pendant l'ouverture

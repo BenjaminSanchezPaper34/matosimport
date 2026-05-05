@@ -100,9 +100,10 @@ export function buildShopSearchUrl(
     }
   }
 
-  const terms = [brand, model, year].filter(Boolean).join("+");
+  const terms = [brand, model, year].filter(Boolean).join(" ");
   if (terms) {
-    return `${SHOP_URL}/recherche?s=${encodeURIComponent(terms.replace(/\s+/g, "+"))}`;
+    const params = new URLSearchParams({ s: terms });
+    return `${SHOP_URL}/recherche?${params.toString()}`;
   }
 
   return `${SHOP_URL}/parts/jet-ski`;

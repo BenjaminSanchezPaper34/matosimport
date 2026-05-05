@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { products, getCategories, getBrands } from "@/lib/products";
 import ProductCard from "@/components/product/ProductCard";
 import { useScrollReveal } from "@/lib/useScrollReveal";
@@ -44,7 +45,7 @@ export default function CataloguePage() {
         {/* Header */}
         <div data-reveal className="mb-10">
           <div className="flex items-center gap-2 text-sm text-gray-500 mb-4">
-            <a href="/" className="hover:text-white transition-colors">Accueil</a>
+            <Link href="/" className="hover:text-white transition-colors">Accueil</Link>
             <span>/</span>
             <span className="text-white">Pièces détachées</span>
           </div>

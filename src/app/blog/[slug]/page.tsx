@@ -1,22 +1,33 @@
-"use client";
-
-import { useParams } from "next/navigation";
 import Link from "next/link";
+import { notFound } from "next/navigation";
+import type { Metadata } from "next";
 import { blogPosts } from "@/data/blog";
 
-export default function BlogArticle() {
-  const params = useParams();
-  const slug = params.slug as string;
-  const post = blogPosts.find((p) => p.slug === slug);
+// Pré-génère les pages statiques pour tous les articles connus
+export function generateStaticParams() {
+  return blogPosts.map((p) => ({ slug: p.slug }));
+}
 
-  if (!post) {
-    return (
-      <div className="pt-32 pb-24 text-center">
-        <h1 className="text-2xl font-bold text-white mb-4">Article introuvable</h1>
-        <Link href="/blog" className="text-accent hover:underline">Retour au blog</Link>
-      </div>
-    );
-  }
+// Pour les slugs non listés ci-dessus, déclenche un vrai 404 (au lieu de SSR à la volée)
+export const dynamicParams = false;
+
+type PageProps = { params: Promise<{ slug: string }> };
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const post = blogPosts.find((p) => p.slug === slug);
+  if (!post) return { title: "Article introuvable" };
+  return {
+    title: `${post.title} — Matos Import`,
+    description: post.excerpt,
+    openGraph: { title: post.title, description: post.excerpt, images: [post.image] },
+  };
+}
+
+export default async function BlogArticle({ params }: PageProps) {
+  const { slug } = await params;
+  const post = blogPosts.find((p) => p.slug === slug);
+  if (!post) notFound();
 
   const otherPosts = blogPosts.filter((p) => p.slug !== slug).slice(0, 2);
 
@@ -73,9 +84,8 @@ export default function BlogArticle() {
             if (trimmed.startsWith("- "))
               return <li key={i} className="text-sm text-gray-400 leading-relaxed ml-4 list-disc">{trimmed.replace("- ", "")}</li>;
             if (trimmed.startsWith("| ")) {
-              // Table row
               const cells = trimmed.split("|").filter(Boolean).map((c) => c.trim());
-              if (cells.every((c) => c.match(/^-+$/))) return null; // separator
+              if (cells.every((c) => c.match(/^-+$/))) return null;
               return (
                 <div key={i} className="grid grid-cols-2 gap-4 text-sm border-b border-white/5 py-2">
                   {cells.map((cell, j) => (
