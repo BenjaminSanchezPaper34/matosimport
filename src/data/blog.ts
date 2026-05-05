@@ -11,6 +11,89 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "seadoo-days-2026-mai-1000-euros-remise-spark",
+    title: "Sea-Doo Days 2026 : 1 000 € de remise sur les Spark® et Spark® Trixx™ du 7 au 17 mai",
+    excerpt: "Du 7 au 17 mai 2026, les Sea-Doo Days reviennent partout en France et en Europe. À l'achat d'un Spark® ou Spark® Trixx™ (millésimes 2024 à 2026), profitez de 1 000 € de remise pour couvrir les frais essentiels d'entretien, de mise à l'eau et d'assurance pendant un an. Chez Matos Import au Cap d'Agde, l'offre se cumule avec nos 10 ans de concession.",
+    category: "Événement",
+    date: "2026-05-05",
+    readTime: "5 min",
+    image: "/images/event/seadoo-days-2026.webp",
+    content: `## Les Sea-Doo Days, c'est quoi ?
+
+Les **Sea-Doo Days** sont une opération commerciale **nationale et européenne** organisée par Sea-Doo (BRP) auprès de l'ensemble de son réseau de concessionnaires officiels. Pour cette **2ᵉ édition**, le constructeur met en avant sa **gamme REC-LITE** — les modèles Spark® et Spark® Trixx™ — avec une offre commerciale forte sur 11 jours de promotion.
+
+L'objectif est simple : rendre l'accès au jet-ski plus serein pour les nouveaux propriétaires en couvrant **les principaux frais de la première année**, qui freinent souvent le passage à l'achat. Sea-Doo communique sur le slogan **« Libérez le fun, naviguez en toute sérénité pendant un an »** — l'idée d'un acompte sur la tranquillité d'esprit.
+
+## L'offre en détail
+
+**Pour tout achat d'un Sea-Doo Spark® ou Spark® Trixx™ (modèles 2024, 2025 ou 2026) entre le 7 et le 17 mai 2026, le client bénéficie de 1 000 € de remise** destinés à couvrir les services essentiels de la première année :
+
+- **400 € pour le premier entretien et l'hivernage** — la révision des 25 heures et la préparation hiver
+- **350 € pour les frais de mise à l'eau** — premier passage à la cale et formalités locales
+- **250 € pour l'assurance annuelle** — la couverture obligatoire
+
+**L'offre est cumulable** avec les promotions et offres concessionnaires en cours. Elle s'adresse aussi bien aux primo-acheteurs qu'aux clients qui complètent un parc existant.
+
+**Dates clés à retenir :**
+- **7 → 17 mai 2026** : période de vente
+- **7 → 31 mai 2026** : enregistrement des unités vendues
+- Code promotionnel BRP : *5-2026_PWC_WEMEA_SPARK_SEADOODAYS*
+- Hashtag officiel : **#seadoodays2026**
+
+## Pourquoi le Spark® et le Spark® Trixx™ sont mis en avant
+
+La gamme **REC-LITE** de Sea-Doo, c'est l'esprit jet-ski revisité version accessible : machines compactes, légères, à transporter sur remorque sans permis poids lourd, faciles à prendre en main, et joueuses sur l'eau. Idéales pour :
+
+- **Débuter le jet-ski sans se ruiner** : le Spark® reste le ticket d'entrée le plus abordable du marché
+- **Profiter en famille** : configurations 2 ou 3 places selon le modèle
+- **S'amuser sur l'eau** : le Spark® Trixx™ est conçu pour le freestyle, avec rallonges de guidon réglables et marchepieds renforcés
+- **Voyager léger** : la coque Polytec™ permet un poids réduit et une remorque accessible
+
+C'est précisément le profil de jet-skis pour lesquels la **maîtrise des coûts de la première année** fait basculer la décision d'achat. D'où le ciblage commercial de cette campagne.
+
+## Et chez Matos Import dans tout ça ?
+
+En tant que **concessionnaire officiel Sea-Doo au Cap d'Agde depuis 1991**, Matos Import by Jeff fait partie des concessions qui participent aux Sea-Doo Days 2026. Et bonne nouvelle : la période coïncide pile avec **notre événement anniversaire des 10 ans de Matos Import × Social Club Sea-Doo, les 15 et 16 mai**.
+
+**Concrètement, sur les deux jours du 15 et 16 mai, vous pouvez profiter à la fois :**
+
+- de la **remise de 1 000 €** Sea-Doo Days sur l'achat d'un Spark® ou Spark® Trixx™
+- de l'**ambiance festive** des 10 ans (concession ouverte, équipe disponible, café d'accueil)
+- des **-10 %** Matos Import sur toute la concession (hors jets) le 15 mai
+- des **essais Sea-Doo gamme 2026** sur place
+- de la **rando d'ouverture de saison** le 16 mai avec ride collectif et apéro dînatoire
+
+C'est rare qu'autant d'opportunités convergent en deux jours sur un même spot. Si vous envisagez de passer le cap du jet-ski cette saison, c'est probablement la meilleure fenêtre de l'année.
+
+## Comment en profiter ?
+
+Quelques options selon votre profil :
+
+**1. Vous savez déjà quel modèle vous voulez**
+Contactez la concession pour réserver votre essai et lancer la commande. Les délais d'enregistrement courent jusqu'au 31 mai, donc il faut anticiper.
+
+**2. Vous hésitez entre plusieurs modèles**
+Venez les 15 ou 16 mai à l'événement Matos Import : vous pourrez essayer les machines sur l'eau, voir la gamme complète, et discuter avec l'équipe pour cibler le modèle qui correspond à votre usage.
+
+**3. Vous voulez juste vous renseigner**
+Passez à la concession pendant la période, ou appelez-nous au **04 67 26 57 70**. On vous explique tout sans pression — l'idée des Sea-Doo Days, c'est justement de désamorcer le frein financier des premiers mois.
+
+## Informations pratiques
+
+**Concession Matos Import by Jeff**
+4 Parking du Temps Libre — Île des Loisirs
+34300 Agde
+
+**Téléphone :** 04 67 26 57 70
+**Email :** matosimportbyjeff.34@gmail.com
+
+**Horaires Sea-Doo Days :** voir nos horaires habituels — du mardi au samedi, ouvert pendant toute la période du 7 au 17 mai.
+
+**Pour suivre l'opération sur les réseaux :** #seadoodays2026
+
+À très vite au Cap d'Agde — que ce soit pour un essai, une commande, ou simplement pour discuter jet-ski.`,
+  },
+  {
     slug: "10-ans-matos-import-social-club-seadoo-mai-2026",
     title: "10 ans de Matos Import × Social Club Sea-Doo : rendez-vous les 15 et 16 mai au Cap d'Agde",
     excerpt: "Deux journées exceptionnelles pour célébrer les 10 ans de Matos Import en partenariat officiel avec Sea-Doo : portes ouvertes, essais de la gamme 2026, remises, ride collectif et apéritif dînatoire.",
