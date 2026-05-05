@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { getActivePromo, PROMO_THEMES } from "@/data/promo-banners";
+import { getActivePromo, getPromoById, PROMO_THEMES } from "@/data/promo-banners";
 
 const STORAGE_PREFIX = "promo-banner-dismissed:";
 
@@ -31,12 +31,18 @@ export default function PromoBanner() {
   const [promo, setPromo] = useState(() => getActivePromo());
 
   useEffect(() => {
-    const active = getActivePromo();
+    // Mode preview via ?preview-promo=ID (utile avant la date de lancement)
+    const params = new URLSearchParams(window.location.search);
+    const previewId = params.get("preview-promo");
+    const active = previewId ? getPromoById(previewId) : getActivePromo();
+
     setPromo(active);
     if (!active) return;
-    // Si l'utilisateur a déjà fermé ce bandeau → ne plus l'afficher
-    const dismissed = safeStorage.get(STORAGE_PREFIX + active.id);
-    if (dismissed === "1") return;
+    // En mode preview on bypass aussi le localStorage (pour toujours voir le rendu)
+    if (!previewId) {
+      const dismissed = safeStorage.get(STORAGE_PREFIX + active.id);
+      if (dismissed === "1") return;
+    }
     setVisible(true);
   }, []);
 

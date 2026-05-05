@@ -44,6 +44,14 @@ export function getActivePromo(now: Date = new Date()): PromoBanner | null {
   );
 }
 
+/**
+ * Mode preview : permet de prévisualiser une promo avant sa date de lancement.
+ * Usage : ajouter ?preview-promo=ID à l'URL (ex: ?preview-promo=seadoo-days-2026)
+ */
+export function getPromoById(id: string): PromoBanner | null {
+  return PROMO_BANNERS.find((p) => p.id === id) ?? null;
+}
+
 /** Tokens de styles par thème */
 export const PROMO_THEMES = {
   seadoo: {
