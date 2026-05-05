@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
+import PromoBanner from "@/components/PromoBanner";
 import Footer from "@/components/layout/Footer";
 
 const inter = Inter({
@@ -152,6 +153,7 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-[100svh] flex flex-col bg-black text-white font-sans">
+        <PromoBanner />
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
