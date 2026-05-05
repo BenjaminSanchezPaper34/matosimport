@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { blogPosts } from "@/data/blog";
+import { getBadge } from "@/lib/blog-categories";
 
 export default function BlogPreview() {
   const posts = blogPosts.slice(0, 3);
@@ -52,7 +53,7 @@ export default function BlogPreview() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
                 <div className="absolute top-3 left-3">
-                  <span className="rounded-full bg-accent/90 px-3 py-1 text-[10px] font-semibold text-white">
+                  <span className={`rounded-full ${getBadge(post.category).ring} px-3 py-1 text-[10px] font-semibold`}>
                     {post.category}
                   </span>
                 </div>

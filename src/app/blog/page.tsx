@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { blogPosts } from "@/data/blog";
+import { getBadge } from "@/lib/blog-categories";
 
 export const metadata: Metadata = {
   title: "Blog — Guides, conseils et actualités jet-ski",
@@ -45,7 +46,7 @@ export default function BlogPage() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
                 <div className="absolute top-3 left-3">
-                  <span className="rounded-full bg-accent/90 px-3 py-1 text-[10px] font-semibold text-white">
+                  <span className={`rounded-full ${getBadge(post.category).ring} px-3 py-1 text-[10px] font-semibold`}>
                     {post.category}
                   </span>
                 </div>

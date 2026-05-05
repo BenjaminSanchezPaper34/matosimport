@@ -2,6 +2,27 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { blogPosts } from "@/data/blog";
+import { getBadge } from "@/lib/blog-categories";
+
+// Rendu inline du markdown : transforme **gras** et [lien](url) en éléments React
+function renderInline(text: string): React.ReactNode {
+  // Tokenise sur **bold** d'abord
+  const parts: Array<{ type: "text" | "bold"; value: string }> = [];
+  let remaining = text;
+  while (remaining.length > 0) {
+    const match = remaining.match(/\*\*([^*]+)\*\*/);
+    if (!match || match.index === undefined) {
+      parts.push({ type: "text", value: remaining });
+      break;
+    }
+    if (match.index > 0) parts.push({ type: "text", value: remaining.slice(0, match.index) });
+    parts.push({ type: "bold", value: match[1] });
+    remaining = remaining.slice(match.index + match[0].length);
+  }
+  return parts.map((p, idx) =>
+    p.type === "bold" ? <strong key={idx} className="font-semibold text-white">{p.value}</strong> : <span key={idx}>{p.value}</span>
+  );
+}
 
 // Pré-génère les pages statiques pour tous les articles connus
 export function generateStaticParams() {
@@ -45,9 +66,14 @@ export default async function BlogArticle({ params }: PageProps) {
 
         {/* Header */}
         <div className="mb-8">
-          <span className="inline-flex rounded-full bg-accent/10 border border-accent/20 px-3 py-1 text-xs font-semibold text-accent mb-4">
-            {post.category}
-          </span>
+          {(() => {
+            const b = getBadge(post.category);
+            return (
+              <span className={`inline-flex rounded-full ${b.bg} border ${b.border} px-3 py-1 text-xs font-semibold ${b.text} mb-4`}>
+                {post.category}
+              </span>
+            );
+          })()}
           <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-white leading-tight">
             {post.title}
           </h1>
@@ -76,25 +102,26 @@ export default async function BlogArticle({ params }: PageProps) {
             const trimmed = line.trim();
             if (!trimmed) return <div key={i} className="h-4" />;
             if (trimmed.startsWith("## "))
-              return <h2 key={i} className="text-xl sm:text-2xl font-bold text-white mt-10 mb-4">{trimmed.replace("## ", "")}</h2>;
+              return <h2 key={i} className="text-xl sm:text-2xl font-bold text-white mt-10 mb-4">{renderInline(trimmed.replace("## ", ""))}</h2>;
             if (trimmed.startsWith("### "))
-              return <h3 key={i} className="text-lg font-semibold text-white mt-6 mb-2">{trimmed.replace("### ", "")}</h3>;
-            if (trimmed.startsWith("**") && trimmed.endsWith("**"))
+              return <h3 key={i} className="text-lg font-semibold text-white mt-6 mb-2">{renderInline(trimmed.replace("### ", ""))}</h3>;
+            // Ligne entièrement en gras (titre de bloc en gold)
+            if (trimmed.startsWith("**") && trimmed.endsWith("**") && trimmed.lastIndexOf("**") === trimmed.length - 2)
               return <p key={i} className="text-sm font-semibold text-gold mt-4 mb-1">{trimmed.replace(/\*\*/g, "")}</p>;
             if (trimmed.startsWith("- "))
-              return <li key={i} className="text-sm text-gray-400 leading-relaxed ml-4 list-disc">{trimmed.replace("- ", "")}</li>;
+              return <li key={i} className="text-sm text-gray-400 leading-relaxed ml-4 list-disc">{renderInline(trimmed.replace("- ", ""))}</li>;
             if (trimmed.startsWith("| ")) {
               const cells = trimmed.split("|").filter(Boolean).map((c) => c.trim());
               if (cells.every((c) => c.match(/^-+$/))) return null;
               return (
                 <div key={i} className="grid grid-cols-2 gap-4 text-sm border-b border-white/5 py-2">
                   {cells.map((cell, j) => (
-                    <span key={j} className={j === 0 ? "text-gray-300 font-medium" : "text-gray-500"}>{cell}</span>
+                    <span key={j} className={j === 0 ? "text-gray-300 font-medium" : "text-gray-500"}>{renderInline(cell)}</span>
                   ))}
                 </div>
               );
             }
-            return <p key={i} className="text-sm text-gray-400 leading-relaxed mb-3">{trimmed}</p>;
+            return <p key={i} className="text-sm text-gray-400 leading-relaxed mb-3">{renderInline(trimmed)}</p>;
           })}
         </div>
 
@@ -134,7 +161,7 @@ export default async function BlogArticle({ params }: PageProps) {
                     <img src={p.image} alt="" className="h-full w-full object-cover" />
                   </div>
                   <div className="flex-1 min-w-0">
-                    <span className="text-[10px] text-accent font-medium">{p.category}</span>
+                    <span className={`text-[10px] font-medium ${getBadge(p.category).text}`}>{p.category}</span>
                     <h4 className="text-sm font-semibold text-white leading-snug group-hover:text-accent transition-colors line-clamp-2 mt-0.5">
                       {p.title}
                     </h4>
