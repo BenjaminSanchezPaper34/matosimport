@@ -52,13 +52,14 @@ export function getPromoById(id: string): PromoBanner | null {
   return PROMO_BANNERS.find((p) => p.id === id) ?? null;
 }
 
-/** Tokens de styles par thème */
+/** Tokens de styles par thème — couleurs officielles Sea-Doo (turquoise → lime) */
 export const PROMO_THEMES = {
   seadoo: {
-    bg: "bg-gradient-to-r from-[#0a3d3d] via-[#0d4f4f] to-[#0a3d3d]",
+    // Gradient lumineux animé inspiré des visuels Sea-Doo Days officiels
+    bg: "promo-banner-seadoo",
     text: "text-white",
-    highlight: "text-[#5fd9c1]",
-    border: "border-b border-[#36b4a3]/30",
+    highlight: "text-[#d4ff5a]",
+    border: "border-b border-[#36b4a3]/40",
   },
   promo: {
     bg: "bg-gradient-to-r from-[#1a0a0c] via-[#2a0e10] to-[#1a0a0c]",

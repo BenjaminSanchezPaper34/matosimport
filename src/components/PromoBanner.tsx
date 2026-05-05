@@ -70,10 +70,10 @@ export default function PromoBanner() {
       <div className="relative mx-auto max-w-7xl px-10 sm:px-12 py-2.5 flex items-center justify-center">
         {/* Texte centré */}
         <Link href={promo.href} className="flex flex-wrap items-baseline justify-center gap-x-2 gap-y-0.5 text-xs sm:text-sm hover:opacity-90 transition-opacity text-center">
-          <span className={`hidden sm:inline-flex h-2 w-2 rounded-full ${theme.highlight.replace("text-", "bg-")} animate-pulse self-center mr-1`} />
-          <span className="font-medium">{promo.intro}</span>
-          <span className={`font-bold ${theme.highlight}`}>{promo.highlight}</span>
-          <span className="hidden sm:inline opacity-90">{promo.detail}</span>
+          <span className="hidden sm:inline-flex h-2 w-2 rounded-full bg-white animate-pulse self-center mr-1 shadow-[0_0_8px_rgba(255,255,255,0.7)]" />
+          <span className="font-medium drop-shadow-[0_1px_2px_rgba(0,0,0,0.4)]">{promo.intro}</span>
+          <span className={`font-bold ${promo.theme === "seadoo" ? "promo-shine text-[#d4ff5a]" : theme.highlight}`}>{promo.highlight}</span>
+          <span className="hidden sm:inline opacity-95 drop-shadow-[0_1px_2px_rgba(0,0,0,0.4)]">{promo.detail}</span>
           <span className={`inline-flex items-center gap-1 font-semibold ${theme.highlight} hover:underline whitespace-nowrap`}>
             <span className="hidden sm:inline">→ {promo.ctaLabel}</span>
             <span className="sm:hidden">→</span>
