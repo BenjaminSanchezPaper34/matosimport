@@ -25,7 +25,7 @@ export interface PromoBanner {
 export const PROMO_BANNERS: PromoBanner[] = [
   {
     id: "seadoo-days-2026",
-    startDate: "2026-05-07",
+    startDate: "2026-05-05",
     endDate: "2026-05-17",
     intro: "Sea-Doo Days du 7 au 17 mai",
     highlight: "1 000 € de remise",
